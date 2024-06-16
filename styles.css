@@ -211,10 +211,26 @@ input[type=text]:focus{
 }
 
 .projects .card{
+    display: grid;
+    grid-template-rows: 1fr max-content;;
+    gap: 30px;
     height: 300px;
+    padding-bottom: 30px;
 }
 .projects .card:hover{
     box-shadow: 0px 0px 5px var(--secondary-color);
+}
+
+.card-btns{
+    font-size: 25px;
+    gap: 20px;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.card-btns>*:hover{
+    color: var(--secondary-color);
+    cursor: pointer;
 }
 .announcements{
     grid-column: 2;
